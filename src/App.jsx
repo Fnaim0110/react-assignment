@@ -14,7 +14,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="parent">
+    <div className="container">
       {todos.map(todo => {
         return (
           <div className="todo" key={todo.id}>
