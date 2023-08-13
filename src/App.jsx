@@ -14,14 +14,28 @@ const App = () => {
   }, []);
 
   return (
-    <div className="container">
-      {todos.map(todo => {
-        return (
-          <div className="todo" key={todo.id}>
-            <p>{JSON.stringify(todo)}</p>
-          </div>
-        )
-      })}
+    <div>
+    <h1>Table of Todo List</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>User ID</th>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          {todos.map(todo => (
+            <tr key={todo.id}>
+              <td>{todo.userId}</td>
+              <td>{todo.id}</td>
+              <td>{todo.title}</td>
+              <td>{todo.completed ? 'Yes' : 'No'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
