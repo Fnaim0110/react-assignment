@@ -14,8 +14,8 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-    <h1>Table of Todo List</h1>
+    <div className="container">
+    <h1>Todos Table</h1>
       <table>
         <thead>
           <tr>
@@ -38,6 +38,6 @@ const App = () => {
       </table>
     </div>
   );
-}
+};
 
 export default App;

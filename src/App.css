@@ -1,18 +1,58 @@
+/* Center the table on the page */
 .table-container {
-    margin: 20px;
-}
-  
-.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    align-items: center;
+  }
+
+/* Style the entire table */
+table {
     border-collapse: collapse;
-    width: 100%;
+    width: 100%; /* Table will take up the entire width of the container */
+    max-width: 800px; /* Set a maximum width for the table */
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+/* Style table header */
+th {
+    background-color: #066643;
+    color: white;
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
 }
-  
-.table th,
-.table td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+
+/* Style table rows */
+tr {
+  transition: background-color 0.2s ease-in-out;
 }
-  
-.table th {
+
+/* Style table cells */
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Style completed tasks */
+td.completed {
+  color: #008000;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+div {
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+  }
