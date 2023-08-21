@@ -31,7 +31,7 @@ const App = () => {
               <td>{todo.userId}</td>
               <td>{todo.id}</td>
               <td>{todo.title}</td>
-              <td>{todo.completed ? 'Yes' : 'No'}</td>
+              <td>{todo.completed ? '✓' : '✗'}</td>
             </tr>
           ))}
         </tbody>
